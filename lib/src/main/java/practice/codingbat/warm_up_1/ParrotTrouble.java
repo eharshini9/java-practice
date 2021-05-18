@@ -13,7 +13,7 @@ public class ParrotTrouble {
      * @param hour
      * @return
      */
-    public boolean parrotTrouble(boolean talking, int hour) {
+    public static boolean parrotTrouble(boolean talking, int hour) {
         return talking && (hour < 7 || hour > 20);
     }
 

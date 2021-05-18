@@ -12,7 +12,7 @@ public class Makes10 {
      * @param b
      * @return
      */
-    public boolean makes10(int a, int b) {
+    public static boolean makes10(int a, int b) {
         return a == 10 || b == 10 || a + b == 10;
     }
 

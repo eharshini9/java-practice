@@ -14,11 +14,9 @@ public class MissingChar {
      * @param n
      * @return
      */
-    public String missingChar(String str, int n) {
+    public static String missingChar(String str, int n) {
 
-        char charToRemove = str.charAt(n);
-        String toremovestring = Character.toString(charToRemove);
-        return str.replace(toremovestring, "");
+        return str.replace(Character.toString(str.charAt(n)), "");
 
     }
 

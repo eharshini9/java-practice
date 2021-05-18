@@ -13,7 +13,7 @@ public class NotString {
      * @param str
      * @return
      */
-    public String notString(String str) {
+    public static String notString(String str) {
 
         return str.startsWith("not") ? str : "not " + str;
 

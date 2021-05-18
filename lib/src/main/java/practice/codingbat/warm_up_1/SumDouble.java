@@ -12,7 +12,7 @@ public class SumDouble {
      * @param b
      * @return
      */
-    public int sumDouble(int a, int b) {
+    public static int sumDouble(int a, int b) {
 
         return (a == b) ? 2 * (a + b) : a + b;
     }
