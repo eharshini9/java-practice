@@ -6,4 +6,11 @@ dist: trusty
 jdk: oraclejdk8
 
 script:
-  - gradlew build --scan -s
+  - gradlew clean build --scan -s
+  - gradlew clean jacocoTestReport --scan -s
+
+notifications:
+  email: false
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
