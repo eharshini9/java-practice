@@ -6,8 +6,8 @@ dist: trusty
 jdk: oraclejdk8
 
 script:
-  - gradlew clean build --scan -s
-  - gradlew clean jacocoTestReport --scan -s
+  - ./gradlew clean build --scan -s
+  - ./gradlew clean jacocoTestReport --scan -s
 
 notifications:
   email: false
