@@ -1,5 +1,7 @@
 package practice.condigbat.string_1;
 
+import practice.common.utils.StringUtils;
+
 public class ExtraEnd {
 
     /**
@@ -13,7 +15,7 @@ public class ExtraEnd {
     public String extraEnd(String str) {
         String newStr = str.substring(str.length() - 2);
 
-        return newStr.repeat(3);
+        return StringUtils.repeat(newStr, 3);
     }
 
 }

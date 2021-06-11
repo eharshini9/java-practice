@@ -1,5 +1,7 @@
 package practice.condigbat.string_1;
 
+import practice.common.utils.StringUtils;
+
 public class ExtraFront {
 
     /**
@@ -14,7 +16,7 @@ public class ExtraFront {
      */
     public static String extraFront(String str) {
 
-        return str.length() < 2 ? str.repeat(3) : (str.substring(0, 2)).repeat(3);
+        return str.length() < 2 ? StringUtils.repeat(str, 3) : StringUtils.repeat(str.substring(0, 2), 3);
     }
 
 }
